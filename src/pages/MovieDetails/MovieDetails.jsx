@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Outlet, useParams } from 'react-router-dom';
 import { fetchMovieById } from 'services/api';
 import { StyledLink } from './MovieDetails.styled';
+import { Loader } from 'components/Loader/Loader';
 
 const MovieDetails = () => {
   const { movieId } = useParams();
@@ -52,6 +53,7 @@ const MovieDetails = () => {
         <StyledLink to="reviews">Reviews</StyledLink>
         <Outlet />
       </div>
+      {isLoading && <Loader />}
     </div>
   );
 };
