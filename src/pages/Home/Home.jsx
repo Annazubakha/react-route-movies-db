@@ -13,11 +13,9 @@ const Home = () => {
       .then(setMovies)
       .finally(() => setIsLoading(false));
   }, []);
-  console.log(movies);
   return (
     <MoviesStyledWrapper>
       <h1>Trending today</h1>
-
       {movies.length > 0 && <MoviesList movies={movies} />}
       {isLoading && <Loader />}
     </MoviesStyledWrapper>
