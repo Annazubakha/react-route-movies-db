@@ -4,7 +4,7 @@ export const MoviesStyledWrapper = styled.div`
   padding: 30px;
   background-color: #99b699;
   color: white;
-  height: 80vh;
+  min-height: 80vh;
   & li {
     font-size: 18px;
     float: left;

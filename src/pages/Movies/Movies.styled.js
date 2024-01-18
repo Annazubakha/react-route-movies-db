@@ -20,6 +20,7 @@ export const MoviesSearchWrapper = styled.div`
     border-radius: 8px;
     border: 2px solid #032010;
     height: 29.91px;
+    cursor: pointer;
   }
   & button:hover {
     background-color: #306e07;

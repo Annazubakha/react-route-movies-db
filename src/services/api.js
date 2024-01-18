@@ -34,6 +34,5 @@ export const fetchMovieReviews = async movieId => {
   const { data } = await axios.get(
     `${BASE_URL}movie/${movieId}/reviews?api_key=${API_KEY}`
   );
-  console.log(data);
   return data.results;
 };

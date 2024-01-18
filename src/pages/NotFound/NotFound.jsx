@@ -4,8 +4,8 @@ import { NotFoundLink, NotFoundText, NotFoundWrapper } from './NotFound.styled';
 const NotFound = () => {
   return (
     <NotFoundWrapper>
-      <NotFoundText>Sorry... Page was not found!</NotFoundText>
-      <NotFoundLink to="/">Return to homepage</NotFoundLink>
+      <NotFoundText>Sorry... The page was not found!</NotFoundText>
+      <NotFoundLink to="/">Return to the homepage</NotFoundLink>
     </NotFoundWrapper>
   );
 };

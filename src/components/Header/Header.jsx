@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import { StyledLink, HeaderStyled, NavMenuList } from './Header.styled';
 
@@ -18,7 +18,9 @@ const Header = () => {
         </nav>
       </HeaderStyled>
 
-      <Outlet />
+      <Suspense>
+        <Outlet />
+      </Suspense>
     </>
   );
 };
